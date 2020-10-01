@@ -10,8 +10,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/teams.css">
 
-        <title>Summerville Rec Soccer - Schedule</title>
+
+        <title>Summerville Rec Soccer - Cubs</title>
 
     </head>
 
@@ -42,57 +44,57 @@
 
         <main>
             <div class="container">
-                <h3>Schedule: May 2-8</h3>
-                <h6><a href="#">Prior Week</a><a style="padding-left:15em" href="#">Next Week</a></h6>
+                <h2 align="center">Cubs</h2>
 
-                <table>
+                <div class="row">
+                    <!-- These work in 12ths -->
+                    <div class="col s9 offset-s3 large_font">League: <span class="table_data">Clovers</span></div>
+                    <div class="col s9 offset-s3 large_font">Coach: <span class="table_data">Erica Kim</span>
+                        <a href="mailto:ericakim@summerville.org" class="small_font">ericakim@summerville.org</a>
+                    </div>
+                    <div class="col s9 offset-s3 large_font">Record: <span class="table_data">1W-0L-1T</span></div>
+                </div>
+
+                <table class="striped centered" style="margin-top:3em; border: solid 1px slategrey;">
                     <thead>
                         <tr>
-                            <th>League</th>
-                            <th>Home Team</th>
-                            <th>Away Team</th>
-                            <th>Field</th>
                             <th>Date</th>
-                            <th>Time</th>
-                            <th>Score</th>
+                            <th>Opponent</th>
+                            <th>Field</th>
+                            <th>Result</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td class="blue-text clickable" onclick="location='teams.html'">Clovers</td>
-                            <td>Cubs</td>
-                            <td>Panthers</td>
-                            <td>High School - East Field</td>
-                            <td>May 2nd (Saturday)</td>
-                            <td>08:30 am</td>
-                            <td>3-2</td>
+                            <td>Apr 25 10:00am</td>
+                            <td>Rockets</td>
+                            <td>High School - West</td>
+                            <td>1-1 (T)</td>
                         </tr>
 
-                        
+                        <tr>
+                            <td>Apr 25 10:00am</td>
+                            <td>Rockets</td>
+                            <td>High School - West</td>
+                            <td>1-1 (T)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Apr 25 10:00am</td>
+                            <td>Rockets</td>
+                            <td>High School - West</td>
+                            <td>1-1 (T)</td>
+                        </tr>
                     </tbody>
                 </table>
 
-
             </div>
+
+
         </main>
 
-        <footer class="page-footer">
-            <div class="row">
-                <div class="col s5"><h6>Summerville Rec Department</h6></div>
-                <div class="col s2"><h6 style="text-align:center;">434-232-7676</h6></div>
-                <div class="col s5"><h6 style="text-align:right">rec@summerville.org</h6></div>
-
-            </div>
-        </footer>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems, {});
-            });
-
-        </script>
+        
 
     </body>
 
