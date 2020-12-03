@@ -1,4 +1,9 @@
 /* reset browser styles */
+
+*{
+	box-sizing: border-box;
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
@@ -128,3 +133,40 @@ footer a {
 	color: white;	
 }
 /* add tutorial styles below here */
+.sidebar1 {
+	float: left;		/* floats sidebar div to left of page */
+	width: 20%;			/* always set width for floating elements */
+	padding: 0 20px 0 10px;
+}
+
+.main {
+	float: left;
+	margin-left: 60%; 		/* we're leaving room for sidebar */
+	padding: 0 20px;
+	border-left: dashed 1px rgb(153,153,153);
+	border-right: dashed 1px rgb(153,153,153);
+}
+
+.sidebar2 {
+	float: right;
+	width: 20%;
+	padding: 0 10px 0 10px;
+}
+
+footer {
+	clear: both; 	/* forces element to drop below floated elements */
+}
+
+.innerColumn {
+	padding: 0 20px 0 10px;
+}
+
+
+nav ul, header h1, footer p{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.pageWrapper {
+	width: 1200px;		/* liquid layout */
+	margin: 0 auto;		/* centers */
+}

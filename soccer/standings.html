@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>
+        Summerville Rec Soccer - Home Page
+    </title>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="schedule.html">schedule</a></li>
+                    <li><a href="standings.html">standings</a></li>
+                    <li><a href="login.html">login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul id="mobile-demo" class="sidenav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="schedule.html">schedule</a></li>
+            <li><a href="standings.html">standings</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <div class="container">
+            <h3>Standings</h3>
+            <ul class="collapsible expandable">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">groups</i>All leagues</div>
+                    <div class="collapsible-body"><span>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th>Ranking</th>
+                                  <th>Team</th>
+                                  <th>Points</th>
+                                  <th>W-L-T</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td><a href="#">league 1 -Team 1</a></td>
+                                <td>30</td>
+                                <td>4-3-2</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td><a href="#">league 2 - Team 3</a></td>
+                                <td>25</td>
+                                <td>3-4-2</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">group</i>League 1</div>
+                    <div class="collapsible-body"><span>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th>Ranking</th>
+                                  <th>Team</th>
+                                  <th>Points</th>
+                                  <th>W-L-T</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td><a href="#">Team 1</a></td>
+                                <td>30</td>
+                                <td>4-3-2</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td><a href="#">Team 3</a></td>
+                                <td>25</td>
+                                <td>3-4-2</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">group</i>League 2</div>
+                    <div class="collapsible-body"><span>
+                        <table>
+                            <thead>
+                              <tr>
+                                  <th>Ranking</th>
+                                  <th>Team</th>
+                                  <th>Points</th>
+                                  <th>W-L-T</th>
+                              </tr>
+                            </thead>
+                    
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td><a href="#">Team 1</a></td>
+                                <td>30</td>
+                                <td>4-3-2</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td><a href="#">Team 3</a></td>
+                                <td>25</td>
+                                <td>3-4-2</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </span></div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col s5">
+                <h6>Summerville thingy</h6>
+            </div>
+            <div class="col s2">
+                <h6 style="text-align: right;">434-232-7676</h6>
+            </div>
+            <div class="col s2">
+                <h6 style="text-align: right;">rec@Summerville.org</h6>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    });
+
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+        accordion: false
+    });
+</script>
+
+</html>
